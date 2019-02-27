@@ -14,7 +14,7 @@ function render(component, options) {
   return {
     wrapper,
     ...getQueriesForElement(wrapper.element),
-    debug: () => console.log(prettyDOM(wrapper.element)),
+    // debug: () => console.log(prettyDOM(wrapper.element)),
   }
 }
 
