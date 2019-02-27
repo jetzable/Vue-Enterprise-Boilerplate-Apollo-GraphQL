@@ -16,10 +16,13 @@
     <BaseButton class="col-md-4 mx-2 my-2 btn-group" @click="getRepoByOwner">
       <span class="mx-auto">Search By Owner</span>
     </BaseButton>
-    <BaseButton class="col-md-4 mx-2 my-2 btn-group" @click="getReposFromOwner">
-      <span class="mx-auto">Search Owner Repositories</span>
+    <BaseButton
+      class="col-md-4 mx-2 my-2 btn-group text-center"
+      @click="getReposFromOwner"
+    >
+      Search Owner Repositories
     </BaseButton>
-    <BaseListItem v-if="listResults.length > 0" :repositories="listResults" />
+    <BaseListItem :repositories="listResults" />
   </Layout>
 </template>
 
